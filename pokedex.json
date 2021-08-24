@@ -1,0 +1,54 @@
+[
+    {
+        "name": "umbreon",
+        "stats": {
+            "no": "197",
+            "level": 100,
+            "type": "dark",
+            "hability": "Synchronize",
+            "height": "1 m",
+            "weight": "27 Kg",
+            "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
+            "icon": "icon-dark"
+        }
+    },
+    {
+        "name": "mewtwo",
+        "stats": {
+            "no": "150",
+            "level": 100,
+            "type": "psychic",
+            "hability": "pressure",
+            "height": "2 m",
+            "weight": "122 Kg",
+            "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+            "icon": "icon-psychic"
+        }
+    },
+    {
+        "name": "alakazam",
+        "stats": {
+            "no": "065",
+            "level": 97,
+            "type": "psychic",
+            "hability": "Synchronize",
+            "height": "1,5 m",
+            "weight": "48 Kg",
+            "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
+            "icon": "icon-psychic"
+        }
+    },
+    {
+        "name": "lickitung",
+        "stats": {
+            "no": "108",
+            "level": 68,
+            "type": "normal",
+            "hability": "oblivious",
+            "height": "1,2 m",
+            "weight": "65,5 Kg",
+            "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png",
+            "icon": "icon-normal"
+        }
+    }
+]

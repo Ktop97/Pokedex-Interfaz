@@ -1,0 +1,214 @@
+:root {
+    --color--secondary: #ffffff;
+    --color--body: #dee9ee;
+    --color--info: #f0eeeef8;
+    --color--main: #0000;
+    --color--hover: #8599a5;
+    --color--blanco: #fff;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: var(--color--body);
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+header {
+    background-color: var(--color--secondary);
+    text-align: center;
+    justify-content: center;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header-logo img {
+    width: 10%;
+    min-width: 2rem;
+    max-width: 3.2rem;
+}
+
+.header-logo h1 {
+    font-size: 2.5rem;
+    margin-left: 0.6rem;
+}
+
+/* fin header */
+
+.container-main {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    padding: 4rem 0;
+}
+
+.container__main-pokemon-title {
+    background-color: var(--color--blanco);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-size: 2.2rem;
+    padding: 1.2rem;
+    min-width: 25rem;
+    width: 60%;
+    margin: auto;
+}
+
+.container__main-pokemon-title img {
+    min-width: 30px;
+    height: 30px;
+    max-width: 30px;
+    margin-right: 0.5rem;
+}
+
+.container__main__pokemon-img {
+    max-width: 100%;
+}
+
+/* info del pokemon */
+
+.info {
+    display: grid;
+    background-color: var(--color--blanco);
+    box-shadow: 12px 10px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 30rem;
+    align-items: center;
+}
+
+.info__feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    color: var(--titles--color);
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.info__title {
+    color: #b86a6a;
+    font-weight: 400;
+}
+
+.info__stats {
+    font-weight: 700 bold;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--color--secondary);
+}
+
+.container-others {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    justify-items: center;
+    width: 90%;
+}
+
+.footer__title {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card__pokemon {
+    border-radius: 14px;
+    justify-items: center;
+    text-align: center;
+    box-shadow: 1px 15px 12px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    min-width: 12rem;
+    width: 75%;
+    background-color: #ffffff;
+}
+
+.card__pokemon img {
+    width: 13rem;
+    height: 12rem;
+}
+
+/* hover */
+
+.card__pokemon:hover {
+    transform: scale(1.1);
+    background-color: var(--color--hover);
+}
+
+@media screen and (min-width: 768px) {
+    .header-logo {
+        justify-content: flex-start;
+    }
+    .container-main {
+        display: grid;
+        grid-template-columns: repeat(2, 60% 40%);
+        height: 50rem;
+    }
+    .container__main-pokemon {
+        max-width: 95%;
+    }
+    .container__main__pokemon-img {
+        width: 53rem;
+        max-height: 47rem;
+    }
+    .container__main-pokemon-title {
+        width: 90%;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        height: 50rem;
+    }
+    .info__feature {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.5rem;
+    }
+    .info__stats {
+        margin-top: 1rem;
+    }
+    .container-others {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28.2rem;
+        gap: 3rem;
+    }
+    .footer__title {
+        font-size: 2.5rem;
+    }
+    .card__pokemon {
+        max-width: 14%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container-others {
+        gap: 7rem;
+    }
+    .container__main-pokemon-title {
+        width: 57rem;
+    }
+}
