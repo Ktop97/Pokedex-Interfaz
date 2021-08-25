@@ -1,7 +1,6 @@
-//etiqueta seleccionada
 const othersPokemons = document.querySelector(".footer");
 
-//promesa obtenida de la peticion fetch
+//retornado promesa de la peticion fetch
 const showPokemon = async (name) => {
     const pokemons = await getPokemons();
     const pokemon = pokemons.find((pokemon) => pokemon.name === name);
@@ -26,7 +25,7 @@ const getPokemons = async () => {
 
 //evento
 const changePokemon = (e) => {
-    if (event.target.classList.contains("footer__image")) {
+    if (e.target.classList.contains("footer__image")) {
         const pokemonName = e.target.dataset.pokemon;
         showPokemon(pokemonName);
     }
